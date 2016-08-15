@@ -3,8 +3,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[frenchb]{babel}
 \usepackage{graphicx}
-
-\usepackage{fancyhdr}
+\usepackage{fancyhdr} % display header with possibility to add images
 \pagestyle{fancy}
 \usepackage{listings} % permet d'inclure du code source (lstset permet d'utiliser des caractères spéciaux)
 \usepackage{xcolor}
@@ -17,6 +16,9 @@
 \rhead{\includegraphics[width=2cm]{envisa_logo.png}}
 
 % \rhead{\begin{picture}(3,3) \put(3,3){\includegraphics[width=1cm]{example-image-a}} \end{picture}}
+\usepackage{enumitem}
+\newcommand{\code}[1]{\texttt{#1}}
+\renewcommand{\labelitemi}{\checkmark}
 
 \begin{document}
     \lstset{literate=
@@ -44,34 +46,162 @@
     \newpage
     
     \part{Objectifs du Stage}
-    pour prendre part à un projet européen Clean Sky. Le travail portera sur l'évaluation de l'impact environ-nemental de nouvelles procédures de vol des avions, dans le cadre du projet ATAEGINA (Airline Trials of Environmental Green Flight Management Functions).
+    \paragraph{Français}
+    Le stagiaire sera amené à prendre part à un projet européen Clean Sky. Le travail portera sur l'évaluation de l'impact environnemental de nouvelles procédures de vol des avions, dans le cadre du projet ATAEGINA (Airline Trials of Environmental Green Flight Management Functions).\\
     Le stage portera sur la modélisation bruit et émissions de ces nouvelles procédures à partir de données enregistrées en conditions réelles de vols. Les modélisations bruit seront réalisées à partir des modèles INM, AEDT et STAPES, et les modélisations des émissions à partir du modèle Turbogas. Les résultats de ces modélisations devront être analysés statistiquement et une étude paramétrique sur les modèles de-vra être réalisée. Le développement de programmes pour l'automatisation de l'analyse et la visualisation des résultats (grand jeu de données) seront nécessaires. Il pourra être demandé au stagiaire de participer ponctuellement à d'autres projets du bureau d'étude.
-    Profil recherché :
+    \paragraph{English}
+    \lipsum[1]
+    \newpage
+    
+    \part{Présentation d'Envisa}
+    Envisa est une société de conseil en environnement spécialisée dans l'aviation durable, qui a été fondée en 2004 par Mme Ayce Celikel. Envisa propose aux aéroports des services de conseils et de certification en Airport Carbon Accreditation (ACA). Envisa compte aujourd'hui une dizaine de collaborateurs au sein de son équipe.
+    \newpage
+    
+    \part{Travail Réalisé}
+    \section{Le projet ATAEGINA : réduire l'impact sonore de l'aéronautique}
+    \subsection{Présentation du projet ATAEGINA}
+    Le projet Airline TriAls of Environmental Green flIght maNAgement functions abrégé en ATAEGINA 
+    
+    \subsection{Objectif}
+    Le travail qui m'a été confié dans le cadre du projet ATAEGINA a consisté en deux principales tâches :
     \begin{itemize}
-        \item Niveau Master 1/2 ou 2/3ème année d'école d'ingénieur en acoustique ou environnement
-        \item Connaissance de l'acoustique et/ou émissions, la maîtrise des modélisations environnementales
-        \item Attrait pour l'aviation et/ou l'environnement
-        \item Connaissance des statistiques et de l'analyse de données
-        \item Maitrise des langages de programmations (Matlab/Python/C...)
-        \item Anglais écrit et parlé
-        \item Maitrise des bases de données serait un plus (SQL)
-        \item Connaissance de l'aéronautique serait un plus
+        \item le développement de programmes permettant la collecte de données bruit pour de nombreux vols ;
+        \item le développement de programmes permettant l'analyse et la visualisation des données collectées.
     \end{itemize}
     
-    
-    \newpage
-    \part{Présentation d'Envisa}
-    \paragraph{Français}
-    Envisa est une société de conseil en environnement spécialisée dans l'aviation durable, qui a été fondé il y a en 2004 par Mme Ayce Celikel.
-    \paragraph{English}
-    Envisa is a global environmental consulting company specializing in sustainable aviation. It was founded in 2004 by Ms. Ayce Celikel.
-    \newpage
-    \part{Travail Réalisé}
-    \section{Analyse Bruit : ATAEGINA}
-    \subsection{Objectif}
     \subsection{Outils Existants}
+    La totalité des programmes mentionnés dans ce rapport sont écrits dans le langage de programmation Python. Les fichiers rencontrés dans ce qui suit se terminant par l'extension ".py" correspondent ainsi à des scripts Python.
+    \paragraph{INM :}
+    Le Modèle de Bruit Intégré (Integrated Noise Model ou INM) était un modèle informatique utilisé pour évaluer l'impact du bruit d'origine aéronautique aux abords des aéroports, notamment sur les zones habitables.
+    \paragraph{ReadFDRData.py :}
+    Le fichier ReadFDRData.py lit une liste de fichiers (généralement au format Excel) contenant des données de vol enregistrées en conditions réelles. Ces données sont alors formatées selon des règles précises et exportées dans un nouveau format plus facile à manipuler (pickle). Ces données de vol incluent de façon non exhaustive :
+    \begin{itemize}
+        \item numéro de la queue de l'avion ;
+        \item 
+        \item latitude ;
+        \item longitude ;
+        \item 
+        \item 
+    \end{itemize}
+    \paragraph{CreateINMInput.py :}
+    Le fichier \code{CreateINMInput.py} a pour fonction de lire les données de vol formatées par le fichier \code{ReadFDRData.py} puis de construire des fichiers d'entrée au format .dbf (fichier de base de données DBase) pour INM à partir de ces données.\\
+    Les fichiers créés par \code{CreateINMInput.py} sont :
+    \begin{itemize}
+        \item 
+        \item 
+    \end{itemize}
+    
     \subsection{Outils Développés}
+    \paragraph{CreateINMStudy.py :}
+    \paragraph{inmauto.py :}
+    Le fichier \code{inmauto.py} constitue un élément central du travail accompli. Ce dernier contient un ensemble de fonctions (on peut aussi parler d'outils) permettant d'automatiser l'interaction avec l'interface graphique du programme INM. Ainsi, plutôt que de configurer une étude complète en passant par les menus du logiciels INM, et de devoir répéter le processus à chaque nouvelle étude, l'utilisateur a la possibilité de rédiger un simple programme Python pour réaliser un grand nombre d'études et ce, sans avoir à passer par la moindre interaction avec l'interface graphique du logiciel INM.\\
+    Une telle démarche présente deux intérêts majeurs :
+    \begin{itemize}
+        \item un gain de temps important de part la vitesse d'exécution et l'autonomie du programme qui libère l'opérateur pour d'autres tâches ;
+        \item la minimisation du risque d'erreurs dues à des facteurs humains (principalement des erreurs de frappe ou des omissions).
+    \end{itemize}
+    \paragraph{INMSample.py}
+    Le fichier \code{INMSample.py} avait à la base une vocation explicative quant à la façon de mettre en \oe uvre les outils fournis par \code{inmauto.py}. Il s'est ensuite peu à peu étoffé jusqu'à contenir le code permettant d'automatiser une étude complète sur INM faisant intervenir plusieurs dizaines de vols.
+    \paragraph{ReadINMOutput.py}
+    Le fichier \code{ReadINMOutput.py} a pour fonction de lire et collecter les données de sortie d'un ensemble d'études INM, puis de mettre en forme ces données de manière à les rendre exploitables et exportables.
+    
     \subsection{Résultats de l'Analyse Bruit}
     \newpage
+    
+    \section{Le projet Open-ALAQS : réduire les émissions de polluants et gaz à effet de serre}
+    \subsection{Présentation du projet Open-ALAQS}
+    ALAQS (Airport Local Air Quality Studies) is an application that simplifies the process of defining the various airport elements (runways, taxiways, buildings, etc.) and allows the spatial distribution of emissions to be visualised.
+    
+    ALAQS provides a four-dimensional emission inventory for an airport in which the emissions from the various fixed and mobile sources are aggregated and subsequently displayed for analysis. Once the emission inventory has been established, dispersion modelling (not yet included in ALAQS) can be used to calculate pollutant concentrations at the airport and in the surrounding area over a given period. The system is thus compatible with legislative requirements for 8-hour, 24-hour, and annual mean values of pollutant concentrations.
+    
+    Background
+    
+    ALAQS was developed by the EUROCONTROL Experimental Centre between 2002 and 2009 under the name ALAQS-AV (ESRI ArcView ® GIS version). Version 2.0 of ALAQS-AV (Dec. 2009) has been approved for use by the ICAO Committee on Aviation Environmental Protection (CAEP) (see CAEP/9-IP/13).
+    
+    However, ALAQS-AV is no longer supported by EUROCONTROL due to new technological orientations.
+    
+    
+    Open-ALAQS
+    
+    A new version of the ALAQS application called Open-ALAQS is under development.
+    
+    This new version is based on an open-source GIS (QGIS) and an open-source database (SQLite), and is completely built around an open architecture which will make it easily adaptable to other GISes and databases.
+    
+    Open source
+    QGIS
+    
+    Previously known as "Quantum GIS".
+    
+    This is a cross-platform, free and open-source desktop geographic information system (GIS) application that provides data viewing, editing and analysis capabilities.
+    SQLite	This is an open-source relational database management system.
+    Open-ALAQS retains the philosophy of the original application: bringing together state-of-the-art methods and databases to provide users with a test-bed for research (e.g. comparing various dispersion models based on the same emission inventory) and for the evaluation of operational improvements at airports. A significant amount of effort has been put into the design of a modular approach for Open-ALAQS, which has resulted in a clear separation of critical elements (user interface - methods - data format) as well as dedicated modules for each type of emission source. This will facilitate further improvements and maintenance of the toolset.
+    
+    This new version is also being used to carry out a new CAEP local air quality model evaluation exercise.
+    
+    The Open-ALAQS license agreement will be available in the near future.
+    
+    
+    Typical applications
+    
+    The Open-ALAQS toolset provides the classic Local Air Quality features, enhanced to allow comparison of different methods. It is designed for the following application areas:
+    
+    4D Airport emission inventories using a selection of inventory methods on all sources related to airport activity on an hourly basis, including aircraft, road vehicles (landside and airside), ground handling (GSE, APU, GPU), infrastructure, power plants, etc.)
+    Air Pollution Dispersion Assessment: Estimate the dispersion of emissions, and model local air pollution concentrations for actual, generic and future situations.
+    Mitigation Planning: Forecast the efficiency in air pollution abatement of measures proposed for reducing emissions from airport-related sources, together with issues concerning the sustainable growth of an airport.
+    Monitoring: Compare modelled and measured pollutant concentrations at specific points to support airports in the implementation of EU directives (e.g. Council Directive 1999/30/EC) on air quality and monitoring.
+    
+    Airport emission-source modelling
+    
+    Open-ALAQS takes the following stationary and mobile emission sources into account:
+    
+    Aircraft-related: gates, runways, taxiways and tracks
+    Stationary and mobile non aircraft-related: area sources - car parks, roadways; point sources - incinerators, heaters, fuel tanks, fire-fighting exercises, generators, etc.
+    It calculates the following emissions:
+    
+    Carbon dioxide (CO2)
+    Carbone monoxide (CO)
+    Hydrocarbons (HC)
+    Nitrogen oxides (NOX)
+    Sulphur oxides (SOX)
+    Volatile organic compounds (VOC)
+    Particulate matter (PM)
+    Aircraft emissions are movement driven and may be calculated from a single aircraft movement (arrival or departure) up to a whole year’s worth of movements. An Open-ALAQS study is based on a detailed aircraft movement or operation journal which can be built from any archived data source of 4D air traffic  trajectories, such as simulator output, real radar data or basic flight plan data. Future scenarios can be derived from simulator data or projected traffic data. Fleet changes can be modelled allowing for technology changes if the user provides the necessary aircraft performance, emission and fuel burn data. Trajectories can either represent individual flights in the form of flightID, time, Latitude-Longitude-FL (X,Y,Z), or a generic flight such as an SAE1845 profile with a default ground track.
+    
+    Aircraft emission inventories in the vicinity of airports are often calculated using ICAO engine exhaust emission data and the ICAO certification reference LTO cycle below 3000ft as illustrated in the diagram. Whilst Open-ALAQS will allow emissions to be calculated using the certification LTO cycle, the features built into Open-ALAQS allow a much higher resolution and accuracy to be used. The operational aircraft LTO cycle can be defined in more detail depending on the study requirements. Each movement (arrival, departure) can be assigned its exact engine, taxi route, climb/descent profile and airborne ground track. 
+    
+    For any of these parameters, the corresponding data must also be provided. For example, if the engine fit is specified, the engine fuel flow and emission indices for the different LTO phases of flight must be provided. For those parameters that are not explicitly specified, Open-ALAQS will use pre-defined default values based on most likely values for a European airport.
+    
+    Thus for a fully specified movement journal the emissions inventory will be based on the 4D trajectory of each movement between the stand and the top of the study (e.g. 3000ft AAL). The performance characteristics and/or fuel flow for each flight mode, and the corresponding emission indices, must be defined.
+    
+    Gate emissions during aircraft turn-around from the handling equipment GSE/GPU and the aircraft’s Auxiliary Power Unit (APU) can be defined in as much detail as required for a study; from individual movements up to generic values for aircraft groups. Non-aircraft emission sources can be modulated using activity profiles. (See thumbnail)
+    
+    Once the study data have been collected and characteristics have been set up in the GIS tool, one or more emission inventories can be run. The results from an emission inventory are in the form of 3D grids - one grid per hour simulated. Dispersion modelling can be performed over the available inventory runs using dispersion models.
+    
+    
+    
+    Emission factors database used for the emission calculation
+    Aircraft emission factors	Open-ALAQS makes use of the ICAO Engine Emissions Databank (issue 20, March 2014) for aircraft jet engine emission factors and the FOCA piston engine emission factors (issued 1/5/09). Open-ALAQS allows authorised users to use turboprop emission factors from the confidential FOI data base. A specific module has been developed with Open-ALAQS to automate the update of emission factors when a new version of the ICAO, FOCA or FOI database is issued.
+    Road traffic emission factors	
+    The Open-ALAQS method for roadway emissions has been adapted from the COPERT IV method and emission factors. Fleet statistics for European countries have been obtained from the COST 319 project. These are used in combination with the average speed on every road segment to calculate segment-specific emission factors for CO, NOX, VOC and PM10.
+    \subsection{Objectif}
+    Le travail effectué 
+    \newpage
+    
     \part{Conclusion}
+    \lipsum
+    \newpage
+    
+    \appendix
+    \part*{Annexes}
+    \section{Indicateurs de niveau sonore}
+    \paragraph{$L_{A}$}
+    \newpage
+    
+    \section{Code source}
+    \subsection{ReadFDRData.py}
+    \subsection{CreateINMInput.py}
+    \subsection{CreateINMStudy.py}
+    \subsection{inmauto.py}
+    \subsection{INMSample.py}
+    \subsection{ReadINMOutput.py}
 \end{document}

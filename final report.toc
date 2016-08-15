@@ -1,12 +1,32 @@
 \select@language {french}
-\contentsline {part}{I\hspace {1em}Objectifs du Stage}{2}
-\contentsline {part}{II\hspace {1em}Pr\IeC {\'e}sentation d'Envisa}{3}
+\contentsline {part}{I\hspace {1em}Objectifs du Stage}{3}
 \contentsline {paragraph}{Fran\IeC {\c c}ais}{3}
 \contentsline {paragraph}{English}{3}
-\contentsline {part}{III\hspace {1em}Travail R\IeC {\'e}alis\IeC {\'e}}{4}
-\contentsline {section}{\numberline {1}Analyse Bruit : ATAEGINA}{4}
-\contentsline {subsection}{\numberline {1.1}Objectif}{4}
-\contentsline {subsection}{\numberline {1.2}Outils Existants}{4}
-\contentsline {subsection}{\numberline {1.3}Outils D\IeC {\'e}velopp\IeC {\'e}s}{4}
-\contentsline {subsection}{\numberline {1.4}R\IeC {\'e}sultats de l'Analyse Bruit}{4}
-\contentsline {part}{IV\hspace {1em}Conclusion}{5}
+\contentsline {part}{II\hspace {1em}Pr\IeC {\'e}sentation d'Envisa}{4}
+\contentsline {part}{III\hspace {1em}Travail R\IeC {\'e}alis\IeC {\'e}}{5}
+\contentsline {section}{\numberline {1}Le projet ATAEGINA : r\IeC {\'e}duire l'impact sonore de l'a\IeC {\'e}ronautique}{5}
+\contentsline {subsection}{\numberline {1.1}Pr\IeC {\'e}sentation du projet ATAEGINA}{5}
+\contentsline {subsection}{\numberline {1.2}Objectif}{5}
+\contentsline {subsection}{\numberline {1.3}Outils Existants}{5}
+\contentsline {paragraph}{INM :}{5}
+\contentsline {paragraph}{ReadFDRData.py :}{5}
+\contentsline {paragraph}{CreateINMInput.py :}{6}
+\contentsline {subsection}{\numberline {1.4}Outils D\IeC {\'e}velopp\IeC {\'e}s}{6}
+\contentsline {paragraph}{CreateINMStudy.py :}{6}
+\contentsline {paragraph}{inmauto.py :}{6}
+\contentsline {paragraph}{INMSample.py}{6}
+\contentsline {paragraph}{ReadINMOutput.py}{6}
+\contentsline {subsection}{\numberline {1.5}R\IeC {\'e}sultats de l'Analyse Bruit}{6}
+\contentsline {section}{\numberline {2}Le projet Open-ALAQS : r\IeC {\'e}duire les \IeC {\'e}missions de polluants et gaz \IeC {\`a} effet de serre}{7}
+\contentsline {subsection}{\numberline {2.1}Pr\IeC {\'e}sentation du projet Open-ALAQS}{7}
+\contentsline {subsection}{\numberline {2.2}Objectif}{9}
+\contentsline {part}{IV\hspace {1em}Conclusion}{10}
+\contentsline {section}{\numberline {A}Indicateurs de niveau sonore}{12}
+\contentsline {paragraph}{$L_{A}$}{12}
+\contentsline {section}{\numberline {B}Code source}{13}
+\contentsline {subsection}{\numberline {B.1}ReadFDRData.py}{13}
+\contentsline {subsection}{\numberline {B.2}CreateINMInput.py}{13}
+\contentsline {subsection}{\numberline {B.3}CreateINMStudy.py}{13}
+\contentsline {subsection}{\numberline {B.4}inmauto.py}{13}
+\contentsline {subsection}{\numberline {B.5}INMSample.py}{13}
+\contentsline {subsection}{\numberline {B.6}ReadINMOutput.py}{13}
