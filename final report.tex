@@ -7,8 +7,11 @@
 \pagestyle{fancy}
 \usepackage{listings} % permet d'inclure du code source (lstset permet d'utiliser des caractères spéciaux)
 \usepackage{xcolor}
-
 \usepackage{lipsum}
+% glossaries packages
+\usepackage{glossaries}
+\makeglossaries
+% set a few lengths
 \setlength\parindent{0pt} % remove paragraph indentation
 \setlength\headheight{42pt} % just to make warning go away. Adjust the value after looking into the warning.
 % \rhead{{\color{blue}\rule{1cm}{1cm}}}
@@ -18,10 +21,12 @@
 % \rhead{\begin{picture}(3,3) \put(3,3){\includegraphics[width=1cm]{example-image-a}} \end{picture}}
 \usepackage{enumitem}
 \newcommand{\code}[1]{\texttt{#1}}
-\renewcommand{\labelitemi}{\checkmark}
+
+\input{my_glossary}
 
 \begin{document}
-    \lstset{literate=
+    \lstset{
+        literate=
         {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
         {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
         {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
@@ -33,34 +38,55 @@
         {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
         {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
         {€}{{\EUR}}1 {£}{{\pounds}}1
-        }
+    }
     \title{
         Rapport de Stage\\
         Modélisation Environnementale\\
         (Acoustique \& Emissions)
-        }
+    }
     \author{Thomas \bsc{Vandenhede}}
     \maketitle
     \vfill
+    \newpage
+    
     \tableofcontents
     \newpage
     
-    \part{Objectifs du Stage}
-    \paragraph{Français}
+    \printglossaries
+    \listoffigures
+    \listoftables
+    \newpage
+    
+    \part{Contexte}
+    \section{Objectifs du Stage}
+    \subsubsection*{Français}
+    \gls{LAMAX}
     Le stagiaire sera amené à prendre part à un projet européen Clean Sky. Le travail portera sur l'évaluation de l'impact environnemental de nouvelles procédures de vol des avions, dans le cadre du projet ATAEGINA (Airline Trials of Environmental Green Flight Management Functions).\\
-    Le stage portera sur la modélisation bruit et émissions de ces nouvelles procédures à partir de données enregistrées en conditions réelles de vols. Les modélisations bruit seront réalisées à partir des modèles INM, AEDT et STAPES, et les modélisations des émissions à partir du modèle Turbogas. Les résultats de ces modélisations devront être analysés statistiquement et une étude paramétrique sur les modèles de-vra être réalisée. Le développement de programmes pour l'automatisation de l'analyse et la visualisation des résultats (grand jeu de données) seront nécessaires. Il pourra être demandé au stagiaire de participer ponctuellement à d'autres projets du bureau d'étude.
-    \paragraph{English}
+    Le stage portera sur la modélisation bruit et émissions de ces nouvelles procédures à partir de données enregistrées en conditions réelles de vols. Les modélisations bruit seront réalisées à partir des modèles INM, AEDT et STAPES, et les modélisations des émissions à partir du modèle Turbogas. Les résultats de ces modélisations devront être analysés statistiquement et une étude paramétrique sur les modèles devra être réalisée. Le développement de programmes pour l'automatisation de l'analyse et la visualisation des résultats (grand jeu de données) seront nécessaires.\\
+    Il pourra être demandé au stagiaire de participer ponctuellement à d'autres projets du bureau d'étude.
+    \subsubsection*{English}
     \lipsum[1]
     \newpage
     
-    \part{Présentation d'Envisa}
-    Envisa est une société de conseil en environnement spécialisée dans l'aviation durable, qui a été fondée en 2004 par Mme Ayce Celikel. Envisa propose aux aéroports des services de conseils et de certification en Airport Carbon Accreditation (ACA). Envisa compte aujourd'hui une dizaine de collaborateurs au sein de son équipe.
+    \section{Présentation d'Envisa}
+    Envisa est une société de conseil en environnement spécialisée dans l'aviation durable, qui a été fondée en 2004 par Mme Ayce Celikel. Envisa propose aux aéroports des services de conseils et de certification en Airport Carbon Accreditation (ACA). Envisa compte aujourd'hui au sein de son équipe un peu moins d'une dizaine de collaborateurs aux profils variées et complémentaires dans un contexte anglophone à forte orientation internationale.
+    \paragraph{Ayce :} Ayce a fondé Envisa il y a plus de 11 ans et a également cofondé AEROBAY. Elle a fondé Envisa et cofondé AEROBAY
+    \paragraph{Serkan :} Ami de longue date d'Ayce, Serkan a rejoint l'aventure Envisa en août 2014 après avoir occupé des postes importants dans une grande banque Turque. Il est aujourd'hui de directeur financier d'Envisa.
+    \paragraph{Emilia :}
+    Forte d'une longue expérience dans le domaine de l'aviation et plus particulièrement les aspects environnementaux liés à l'activité aéronautique, Emilia peut justifier d'une thèse portant sur les émissions de polluants. Très polyvalente elle sait mettre à profit ses capacités d'adaptation que ce soit sur de nouveaux logiciels ou des langages de programmation tels que Python. Les bases de données et les réseaux n'ont pas de secrets pour elle.
+    \paragraph{Stavros :}
+    Stavros a validé une thèse portant sur les particules fines. Il est spécialisé dans les émissions de polluants et gaz à effet de serre et joue à la fois le rôle de référent dans divers langages de programmation, notamment Python.
+    \paragraph{Anne-Laure :}
+    Anne-Laure termine actuellement sa thèse en perception acoustique. Elle est la référence de l'entreprise pour les questions relatives au bruit.
+    \paragraph{Amel :}
+    Après avoir suivi un parcours en sciences politiques, Amel s'est spécialisée en communication. Elle est en charge à ce jour de la partie communication et marketing d'Envisa.
     \newpage
     
     \part{Travail Réalisé}
+
     \section{Le projet ATAEGINA : réduire l'impact sonore de l'aéronautique}
     \subsection{Présentation du projet ATAEGINA}
-    Le projet Airline TriAls of Environmental Green flIght maNAgement functions abrégé en ATAEGINA 
+    Le projet \gls{ATAEGINA} 
     
     \subsection{Objectif}
     Le travail qui m'a été confié dans le cadre du projet ATAEGINA a consisté en deux principales tâches :
@@ -70,12 +96,23 @@
     \end{itemize}
     
     \subsection{Outils Existants}
-    La totalité des programmes mentionnés dans ce rapport sont écrits dans le langage de programmation Python. Les fichiers rencontrés dans ce qui suit se terminant par l'extension ".py" correspondent ainsi à des scripts Python.
+    La totalité des programmes mentionnés dans ce rapport sont écrits dans le langage de programmation Python. Les fichiers rencontrés dans ce qui suit qui se terminent par l'extension ".py" correspondent ainsi à des scripts Python.
     \paragraph{INM :}
-    Le Modèle de Bruit Intégré (Integrated Noise Model ou INM) était un modèle informatique utilisé pour évaluer l'impact du bruit d'origine aéronautique aux abords des aéroports, notamment sur les zones habitables.
+    Le Modèle de Bruit Intégré ou \gls{INM} était le modèle  informatique standard de la FAA depuis 1978 pour évaluer l'impact du bruit d'origine aéronautique aux abords des aéroports, notamment sur les zones habitables. \gls{INM} est un programme informatique utilisé par plus d'un millier d'organisations dans plus de 65 pays.\\
+    Le programme peut être utilisé directement pour :
+    \begin{itemize}
+        \item estimer l'impact des bruits d'avion autout d'un aéroport ou d'un héliport donné ;
+        \item estimer les variations d'impact sonore résultant de nouvelles configurations de pistes ;
+        \item Assessing changes in noise impact resulting from new traffic demand and fleet mix
+        \item Evaluating noise impacts from new operational procedures
+        \item Evaluating noise impacts from aircraft operations in and around national parks
+    \end{itemize}
+    Le modèle \gls{INM} était capable de générer aussi bien des contours de bruit dans un secteur donné que des niveaux sonores à des emplacements prédéterminés. Les données de sorties pouvaient être autant à base de niveaux d'exposition, que de niveaux maximum, ou de durées.\\
+    A compter de mai 2015, \gls{INM} a été remplacé par l'Outil de Conception Environnementale pour l'Aviation ou \gls{AEDT} pour lequel les méthodologies employées dans INM ont joué le rôle de composants clés.
     \paragraph{ReadFDRData.py :}
     Le fichier ReadFDRData.py lit une liste de fichiers (généralement au format Excel) contenant des données de vol enregistrées en conditions réelles. Ces données sont alors formatées selon des règles précises et exportées dans un nouveau format plus facile à manipuler (pickle). Ces données de vol incluent de façon non exhaustive :
     \begin{itemize}
+        \renewcommand{\labelitemi}{$\bullet$}
         \item numéro de la queue de l'avion ;
         \item 
         \item latitude ;
@@ -83,7 +120,7 @@
         \item 
         \item 
     \end{itemize}
-    \paragraph{CreateINMInput.py :}
+\paragraph{CreateINMInput.py :}
     Le fichier \code{CreateINMInput.py} a pour fonction de lire les données de vol formatées par le fichier \code{ReadFDRData.py} puis de construire des fichiers d'entrée au format .dbf (fichier de base de données DBase) pour INM à partir de ces données.\\
     Les fichiers créés par \code{CreateINMInput.py} sont :
     \begin{itemize}
@@ -106,11 +143,14 @@
     Le fichier \code{ReadINMOutput.py} a pour fonction de lire et collecter les données de sortie d'un ensemble d'études INM, puis de mettre en forme ces données de manière à les rendre exploitables et exportables.
     
     \subsection{Résultats de l'Analyse Bruit}
+    \subsection{Resultats de l'Analyse Emissions}
     \newpage
     
     \section{Le projet Open-ALAQS : réduire les émissions de polluants et gaz à effet de serre}
     \subsection{Présentation du projet Open-ALAQS}
-    ALAQS (Airport Local Air Quality Studies) is an application that simplifies the process of defining the various airport elements (runways, taxiways, buildings, etc.) and allows the spatial distribution of emissions to be visualised.
+    FR Le projet ALAQS (Airport Local Air Quality Studies) est une application qui simplifie le processus de définition de divers éléments aéroportuaires (comme les pistes, les voies de circulation, les bâtiments, etc.) et permet la visualisation de la distribution spatiale des émissions.
+    
+    EN Le projet ALAQS (Airport Local Air Quality Studies) is an application that simplifies the process of defining the various airport elements (runways, taxiways, buildings, etc.) and allows the spatial distribution of emissions to be visualised.
     
     ALAQS provides a four-dimensional emission inventory for an airport in which the emissions from the various fixed and mobile sources are aggregated and subsequently displayed for analysis. Once the emission inventory has been established, dispersion modelling (not yet included in ALAQS) can be used to calculate pollutant concentrations at the airport and in the surrounding area over a given period. The system is thus compatible with legislative requirements for 8-hour, 24-hour, and annual mean values of pollutant concentrations.
     
@@ -177,18 +217,29 @@
     
     Once the study data have been collected and characteristics have been set up in the GIS tool, one or more emission inventories can be run. The results from an emission inventory are in the form of 3D grids - one grid per hour simulated. Dispersion modelling can be performed over the available inventory runs using dispersion models.
     
-    
-    
     Emission factors database used for the emission calculation
     Aircraft emission factors	Open-ALAQS makes use of the ICAO Engine Emissions Databank (issue 20, March 2014) for aircraft jet engine emission factors and the FOCA piston engine emission factors (issued 1/5/09). Open-ALAQS allows authorised users to use turboprop emission factors from the confidential FOI data base. A specific module has been developed with Open-ALAQS to automate the update of emission factors when a new version of the ICAO, FOCA or FOI database is issued.
     Road traffic emission factors	
     The Open-ALAQS method for roadway emissions has been adapted from the COPERT IV method and emission factors. Fleet statistics for European countries have been obtained from the COST 319 project. These are used in combination with the average speed on every road segment to calculate segment-specific emission factors for CO, NOX, VOC and PM10.
     \subsection{Objectif}
     Le travail effectué 
+    
+    \section{Travaux annexes}
+    \subsection{Design et communication web}
+    \subsection{Réalisation de vidéos explicatives pour un projet "e-learning"}
+    Dans le cadre du projet Open-ALAQS, j'ai été amené à réaliser, en parallèle de mon travail de développement de l'outil de calcul d'émissions de GSE
     \newpage
     
     \part{Conclusion}
-    \lipsum
+    \subsubsection*{Français}
+    A l'issue de ce stage j'ai appris beaucoup.
+    \begin{itemize}
+        \item sur le plan humain. Savoir dialoguer avec des individus issus de cultures différentes et aux caractères variés.
+        \item sur le domaine de l'aéronautique
+        \item sur les problématiques environnementales liées à l'aviation
+        \item sur 
+    \end{itemize}
+    \subsubsection*{Anglais}
     \newpage
     
     \appendix
@@ -201,7 +252,13 @@
     \subsection{ReadFDRData.py}
     \subsection{CreateINMInput.py}
     \subsection{CreateINMStudy.py}
+    % \lstinputlisting[language=Python]{CreateINMStudy.py}
     \subsection{inmauto.py}
+    % \lstinputlisting[language=Python]{inmauto.py}
     \subsection{INMSample.py}
     \subsection{ReadINMOutput.py}
+    \newpage
+    
+    \bibliographystyle{amsplain}
+    \bibliography{biblio}
 \end{document}
