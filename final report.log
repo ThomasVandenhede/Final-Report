@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.7)  24 AUG 2016 01:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.24)  27 AUG 2016 17:25
 entering extended mode
 **"./final report.tex"
 ("final report.tex"
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -20,20 +20,19 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+) ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
+y"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\UTF8.def"
+ ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\UTF8.def"
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -270,7 +269,7 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -311,7 +310,7 @@ File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -334,28 +333,28 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+)) ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.st
+y"
 Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+ ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+)) ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.s
+ty"
 Package: babel 2016/04/23 3.9r The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-french\frenchb.ldf"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-french\frenc
+hb.ldf"
 Language: frenchb 2016/05/14 v3.2c French support from the babel system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
@@ -381,32 +380,44 @@ Package babel Info: Making ? an active character on input line 368.
 \parindentFFN=\dimen105
 \FBfnindent=\skip49
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\carlisle\scalefnt.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\carlisle\scalefnt.
+sty")
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.
+sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
 Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\graphics.
+cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
 File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count92
@@ -414,7 +425,8 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
+sty"
 \fancy@headwidth=\skip50
 \f@ncyO@elh=\skip51
 \f@ncyO@erh=\skip52
@@ -425,7 +437,8 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \f@ncyO@olf=\skip57
 \f@ncyO@orf=\skip58
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+sty"
 \lst@mode=\count93
 \lst@gtempboxa=\box26
 \lst@token=\toks18
@@ -439,21 +452,23 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \lst@lineno=\count98
 \lst@maxwidth=\dimen111
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
+ty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count99
 \lst@skipnumbers=\count100
 \lst@framebox=\box27
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\color.cfg
+"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -467,64 +482,77 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count101
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\glossaries\base\glossaries.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\gl
+ossaries.sty"
 Package: glossaries 2016/06/09 v4.25 (NLCT)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.st
+y"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.
+tex"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils
+.tex"
 \XKV@toks=\toks19
 \XKV@tempa@toks=\toks20
 )
 \XKV@depth=\count102
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mfirstuc\mfirstuc.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mfirstuc\mfirstuc.
+sty"
 Package: mfirstuc 2016/07/31 v2.04 (NLCT)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
+sty"
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count103
 )
 \@glsmfirst=\toks21
 \@glsmrest=\toks22
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\textcase\textcase.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textcase\textcase.
+sty"
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xfor\xfor.sty"
+) ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xfor\xfor.sty"
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\datatool\datatool-base.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool-
+base.sty"
 Package: datatool-base 2016/07/28 v2.27 (NLCT)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+y"
 Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip59
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks23
 \ex@=\dimen112
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen113
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count104
@@ -565,22 +593,20 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\substr\substr.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\substr\substr.sty"
 Package: substr 2009/10/20 v1.2 Handle substrings
 \c@su@anzahl=\count116
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\datatool\datatool-fp.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool-
+fp.sty"
 Package: datatool-fp 2016/07/28 v2.27 (NLCT)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\fp.sty"
+ ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp.sty"
 Package: fp 1995/04/02
-
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\defpattern.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\defpattern.sty"
 Package: defpattern 1994/10/12
 \actioncount=\count117
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\fp-basic.sty"
+) ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-basic.sty"
 Package: fp-basic 1996/05/13
 \FP@xs=\count118
 \FP@xia=\count119
@@ -591,33 +617,30 @@ Package: fp-basic 1996/05/13
 \FP@regb=\count124
 \FP@regs=\count125
 \FP@times=\count126
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\fp-addons.sty"
+) ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-addons.sty
+"
 Package: fp-addons 1995/03/15
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\fp-snap.sty"
+) ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-snap.sty"
 Package: fp-snap 1995/04/05
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\fp-exp.sty"
+) ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-exp.sty"
 Package: fp-exp 1995/04/03
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty"
 Package: fp-trigo 1995/04/14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\fp-pas.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-pas.sty"
 Package: fp-pas 1994/08/29
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\fp-random.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-random.sty"
 Package: fp-random 1995/02/23
 \FPseed=\count127
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
+) ("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
 Package: fp-eqn 1995/04/03
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\fp-upn.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-upn.sty"
 Package: fp-upn 1996/10/21
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fp\fp-eval.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eval.sty"
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks28
@@ -630,22 +653,24 @@ Package: fp-eval 1995/04/03
 \dtl@codeB=\count133
 \@dtl@foreach@level=\count134
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\glossaries\base\glossaries-compat
-ible-307.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\gl
+ossaries-compatible-307.sty"
 Package: glossaries-compatible-307 2016/06/09 v4.25 (NLCT)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tracklang\tracklang.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tracklang\tracklan
+g.sty"
 Package: tracklang 2015/03/23 v1.2 (NLCT) Track Languages
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\tracklang\tracklang.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\base\translator\translator
-.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tracklang\trackl
+ang.tex"))
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\base\transl
+ator\translator.sty"
 Package: translator 2010/06/12 ver 1.10
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\base\translator\translator
--language-mappings.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\glossaries-french\glossaries-fren
-ch.ldf"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\base\transl
+ator\translator-language-mappings.tex"))
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-french\
+glossaries-french.ldf"
 File: glossaries-french.ldf 2014/11/23 v1.0
 )
 \gls@level=\count135
@@ -656,19 +681,21 @@ File: glossaries-french.ldf 2014/11/23 v1.0
 \glsshorttok=\toks32
 \glslongtok=\toks33
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-hypern
-av.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
+glossary-hypernav.sty"
 Package: glossary-hypernav 2016/06/09 v4.25 (NLCT)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-list.s
-ty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
+glossary-list.sty"
 Package: glossary-list 2016/06/09 v4.25 (NLCT)
 \glslistdottedwidth=\skip64
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-long.s
-ty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
+glossary-long.sty"
 Package: glossary-long 2016/06/09 v4.25 (NLCT)
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.st
+y"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip65
 \LTright=\skip66
@@ -689,10 +716,12 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \glsdescwidth=\skip69
 \glspagelistwidth=\skip70
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-super.
-sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
+glossary-super.sty"
 Package: glossary-super 2016/06/09 v4.25 (NLCT)
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty"
+
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabular\super
+tabular.sty"
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \c@tracingst=\count141
 \ST@wd=\dimen122
@@ -711,8 +740,8 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@dimen=\dimen132
 \ST@pbox=\box34
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-tree.s
-ty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
+glossary-tree.sty"
 Package: glossary-tree 2016/06/09 v4.25 (NLCT)
 \glstreeindent=\skip74
 ))
@@ -721,8 +750,10 @@ Package: glossary-tree 2016/06/09 v4.25 (NLCT)
 \openout4 = `"final report.glo"'.
 
 Package glossaries Info: Writing glossary file "final report".glo on input line
- 13.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
+ 14.
+
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
+sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip75
 \enit@outerparindent=\dimen133
@@ -730,32 +761,36 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box35
 \enitdp@description=\count142
 )
-(my_glossary.tex) ("final report.aux")
+\@input{my_glossary.aux}
+\openout2 = `my_glossary.aux'.
+
+(my_glossary.tex) ("final report.aux" (title.aux))
 \openout1 = `"final report.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Info: Redefining \degres on input line 27.
-LaTeX Info: Redefining \dots on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Info: Redefining \degres on input line 43.
+LaTeX Info: Redefining \dots on input line 43.
 Package frenchb.ldf Info: Setting StandardItemizeEnv=true for
 (frenchb.ldf)             compatibility with enumitem package,
-(frenchb.ldf)              on input line 27.
+(frenchb.ldf)              on input line 43.
 Package frenchb.ldf Info: Setting StandardEnumerateEnv=true for
 (frenchb.ldf)             compatibility with enumitem package,
-(frenchb.ldf)              on input line 27.
-LaTeX Info: Redefining \up on input line 27.
+(frenchb.ldf)              on input line 43.
+LaTeX Info: Redefining \up on input line 43.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count143
 \scratchdimen=\dimen134
@@ -768,15 +803,19 @@ LaTeX Info: Redefining \up on input line 27.
 \MPnumerator=\count147
 \makeMPintoPDFobject=\count148
 \everyMPtoPDFconversion=\toks37
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+)
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -784,22 +823,28 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefin
+ekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -814,24 +859,80 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \c@lstlisting=\count149
+\openout2 = `title.aux'.
 
-[1
+ (title.tex
+<images/Paris-ouest-logo.png, id=1, 301.125pt x 146.5475pt>
+File: images/Paris-ouest-logo.png Graphic file (type png)
+
+<use images/Paris-ouest-logo.png>
+Package pdftex.def Info: images/Paris-ouest-logo.png used on input line 8.
+(pdftex.def)             Requested size: 149.75923pt x 72.88446pt.
+
+<images/envisa_logo.png, id=2, 260.172pt x 115.632pt>
+File: images/envisa_logo.png Graphic file (type png)
+
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 16.
+(pdftex.def)             Requested size: 149.75923pt x 66.56198pt.
+ [1
 
 \openout3 = `"final report.ist"'.
 
-{C:/Users/Thomas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("final report.toc")
+
+
+
+{C:/Users/thoma/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/Pa
+ris-ouest-logo.png> <./images/envisa_logo.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 62--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--75
+
+ []
+
+[2
+
+] ("final report.toc"
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 33.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [3
+
+]
+Overfull \hbox (3.56764pt too wide) in paragraph at lines 36--36
+ [] []\T1/cmr/bx/n/12 Réalisation de vi-déos ex-pli-ca-tives pour un pro-jet "e
+-learning" []  
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `"final report.toc"'.
 
- <envisa_logo.png, id=9, 260.172pt x 115.632pt>
-File: envisa_logo.png Graphic file (type png)
-
-<use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 53.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
- [2 <./envisa_logo.png>] ("final report.gls")
-("final report.lof")
+ ("final report.lof")
 \tf@lof=\write6
 \openout6 = `"final report.lof"'.
 
@@ -839,122 +940,251 @@ Package pdftex.def Info: envisa_logo.png used on input line 53.
 \tf@lot=\write7
 \openout7 = `"final report.lot"'.
 
-File: envisa_logo.png Graphic file (type png)
- <use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 58.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
- [3]
-File: envisa_logo.png Graphic file (type png)
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 82.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
 
-<use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 69.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
- [4]
-Overfull \hbox (0.25597pt too wide) in paragraph at lines 80--81
- \T1/cmr/bx/n/10 Anne-Laure :[] \T1/cmr/m/n/10 Anne-Laure ter-mine ac-tuel-le-m
-ent sa thèse en per-cep-tion acous-
+[4]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 99.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [5]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 99.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [6]
+Underfull \hbox (badness 2970) in paragraph at lines 107--108
+[]\T1/cmr/m/n/12 cartographies de bruit (en res-pect de la di-rec-tive eu-ro-pé
+enne
  []
 
-File: envisa_logo.png Graphic file (type png)
-<use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 83.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
- [5]
-File: envisa_logo.png Graphic file (type png)
- <use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 112.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
- [6]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 124.
-
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-File: envisa_logo.png Graphic file (type png)
-
-<use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 144.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
+File: images/envisa_logo.png Graphic file (type png)
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 126.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
  [7]
-File: envisa_logo.png Graphic file (type png)
- <use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 147.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
- [8]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 159.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 138.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 159.
-File: envisa_logo.png Graphic file (type png)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 138.
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 142.
+File: images/envisa_logo.png Graphic file (type png)
 
-<use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 184.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 146.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [8]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 164.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
  [9]
-File: envisa_logo.png Graphic file (type png)
- <use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 215.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
+File: images/envisa_logo.png Graphic file (type png)
+
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 181.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
  [10]
-Overfull \hbox (14.89822pt too wide) in paragraph at lines 216--217
-[]\T1/cmr/m/n/10 Gate emis-sions du-ring air-craft turn-around from the hand-li
-ng equip-ment GSE/GPU
+Underfull \hbox (badness 10000) in paragraph at lines 185--196
+
  []
 
-File: envisa_logo.png Graphic file (type png)
-<use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 231.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
- [11]
-File: envisa_logo.png Graphic file (type png)
- <use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 243.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
- [12]
-File: envisa_logo.png Graphic file (type png)
- <use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 249.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
 
-[13]
-File: envisa_logo.png Graphic file (type png)
- <use envisa_logo.png>
-Package pdftex.def Info: envisa_logo.png used on input line 260.
-(pdftex.def)             Requested size: 56.9055pt x 25.2909pt.
+Underfull \hbox (badness 1596) in paragraph at lines 185--196
+\T1/cmr/m/n/12 Ami de longue date d'Ayce, \T1/cmr/bx/n/12 Ser-kan \T1/cmr/m/n/1
+2 a re-joint l'aven-ture En-visa en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--196
+
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 185--196
+\T1/cmr/bx/n/12 Anne-Laure \T1/cmr/m/n/12 ter-mine ac-tuel-le-ment sa thèse en 
+per-cep-tion au-di-tive.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--196
+
+ []
+
+File: images/envisa_logo.png Graphic file (type png)
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 196.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [11]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 198.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [12]
+File: images/envisa_logo.png Graphic file (type png)
+
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 225.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [13]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 241.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
  [14]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 247.
+
+
+("C:\Users\thoma\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+File: images/envisa_logo.png Graphic file (type png)
+
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 265.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [15]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 273.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [16]
+File: images/envisa_logo.png Graphic file (type png)
+
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 290.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [17]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 320.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [18]
+File: images/envisa_logo.png Graphic file (type png)
+
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 341.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [19]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 354.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [20]
+File: images/envisa_logo.png Graphic file (type png)
+
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 367.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [21]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 383.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [22]
+File: images/envisa_logo.png Graphic file (type png)
+
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 405.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [23]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 418.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [24]
+File: images/envisa_logo.png Graphic file (type png)
+
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 432.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [25]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 434.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [26]
+File: images/envisa_logo.png Graphic file (type png)
+
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 440.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [27]
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 449.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [28]
 No file "final report".bbl.
-("final report.aux") ) 
+("final report.gls"
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 39.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [29]
+File: images/envisa_logo.png Graphic file (type png)
+
+<use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 73.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [30])
+File: images/envisa_logo.png Graphic file (type png)
+ <use images/envisa_logo.png>
+Package pdftex.def Info: images/envisa_logo.png used on input line 457.
+(pdftex.def)             Requested size: 42.67912pt x 18.96729pt.
+ [31]
+("final report.aux" (title.aux)) ) 
 Here is how much of TeX's memory you used:
- 11014 strings out of 493334
- 158457 string characters out of 3136670
- 396782 words of memory out of 3000000
- 14304 multiletter control sequences out of 15000+200000
- 17019 words of font info for 41 fonts, out of 3000000 for 9000
+ 11858 strings out of 493334
+ 175928 string characters out of 3130222
+ 408444 words of memory out of 3000000
+ 15131 multiletter control sequences out of 15000+200000
+ 18041 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,16n,53p,1945b,439s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-sup
-er/cm-super-t1.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx
-1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx120
-0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx2074.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1200.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfsl1000.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on "final report.pdf" (14 pages, 264202 bytes).
+ 46i,16n,60p,1945b,689s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/thoma/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Users/thoma/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/thoma/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Us
+ers/thoma/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/cm-super/sfbx0800.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/thoma/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/thoma/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/th
+oma/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx2488.pfb>
+<C:/Users/thoma/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/s
+fcc1200.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/cm-super/sfcc1440.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/cm-super/sfcc1728.pfb><C:/Users/thoma/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Users/thoma/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/thoma/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Use
+rs/thoma/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200
+.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-su
+per/sftt1200.pfb>
+Output written on "final report.pdf" (31 pages, 347237 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 175 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,8 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,12pt,twoside]{article}
 \usepackage[UTF8]{inputenc}	% encodage
 \usepackage[T1]{fontenc}
 \usepackage[frenchb]{babel}
+\usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{fancyhdr} % display header with possibility to add images
 \pagestyle{fancy}
@@ -9,20 +10,35 @@
 \usepackage{xcolor}
 \usepackage{lipsum}
 % glossaries packages
-\usepackage{glossaries}
+\usepackage[nopostdot]{glossaries}
 \makeglossaries
 % set a few lengths
 \setlength\parindent{0pt} % remove paragraph indentation
-\setlength\headheight{42pt} % just to make warning go away. Adjust the value after looking into the warning.
+\setlength\headheight{24pt} % just to make warning go away. Adjust the value after looking into the warning.
 % \rhead{{\color{blue}\rule{1cm}{1cm}}}
-
-\rhead{\includegraphics[width=2cm]{envisa_logo.png}}
-
-% \rhead{\begin{picture}(3,3) \put(3,3){\includegraphics[width=1cm]{example-image-a}} \end{picture}}
 \usepackage{enumitem}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO, LE]{\includegraphics[width=1.5cm]{images/envisa_logo.png}}
+\fancyhead[LO, RE]{Modélisation Environnementale : Acoustique \& Emissions}
+\fancyfoot[CE, CO]{\leftmark}
+\fancyfoot[RO, LE]{\thepage}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
 \newcommand{\code}[1]{\texttt{#1}}
 
-\input{my_glossary}
+\newcommand{\reporttitle}
+{
+	Modélisation Environnementale\\
+	(Acoustique \& Emissions)
+}
+\newcommand{\reportauthor}{Thomas \textsc{Vandenhede}} % Auteur
+\newcommand{\reportsubject}{Rapport de Stage de Fin d'\'Etude} % Sujet
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\include{my_glossary}
 
 \begin{document}
     \lstset{
@@ -39,54 +55,173 @@
         {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
         {€}{{\EUR}}1 {£}{{\pounds}}1
     }
-    \title{
-        Rapport de Stage\\
-        Modélisation Environnementale\\
-        (Acoustique \& Emissions)
-    }
-    \author{Thomas \bsc{Vandenhede}}
-    \maketitle
-    \vfill
+	\include{title}
+    
+    \section*{Remerciements}
+    \thispagestyle{empty}
+    Merci à \'Emilia pour son aide et sa patience face aux difficultés que j'ai pu rencontrer.
+	\\\\
+    Merci à Stavros pour la pédagogie dont il a fait preuve, son naturel calme et rassurant et ses bons conseils en Python.
+    \\\\
+    Merci à Anne-Laure pour ses encouragements à être autonome et à trouver les solutions par moi-même.
+    \\\\
+    Merci à Amel pour m'avoir proposé des projets qui m'ont fait sortir de ma zone de confort et pour n'avoir jamais douté de mes capacités à les mener à bien. Notre collaboration m'a fait progresser dans des domaines inattendus.
+    \\\\
+    Merci à Serkan pour son attitude amicale.
+    \\\\
+    Merci à Ayce pour son accueil chaleureux, son enthousiasme débordant et sa manière de croire dans les potentiels des gens.
+    \\\\
+    Enfin, merci à toute l'équipe d'Envisa pour avoir cru en mes capacités et pour m'avoir fait me sentir comme leur égal.
+    \clearpage
     \newpage
     
     \tableofcontents
-    \newpage
-    
-    \printglossaries
     \listoffigures
     \listoftables
+    \sloppy
     \newpage
     
-    \part{Contexte}
+    \part{Introduction}
+    \section{Contexte du Stage}
+    Prévisions de l'augmentation du trafic aérien. Objectifs européens de limitation des émissions.
+    
     \section{Objectifs du Stage}
-    \subsubsection*{Français}
-    \gls{LAMAX}
-    Le stagiaire sera amené à prendre part à un projet européen Clean Sky. Le travail portera sur l'évaluation de l'impact environnemental de nouvelles procédures de vol des avions, dans le cadre du projet ATAEGINA (Airline Trials of Environmental Green Flight Management Functions).\\
-    Le stage portera sur la modélisation bruit et émissions de ces nouvelles procédures à partir de données enregistrées en conditions réelles de vols. Les modélisations bruit seront réalisées à partir des modèles INM, AEDT et STAPES, et les modélisations des émissions à partir du modèle Turbogas. Les résultats de ces modélisations devront être analysés statistiquement et une étude paramétrique sur les modèles devra être réalisée. Le développement de programmes pour l'automatisation de l'analyse et la visualisation des résultats (grand jeu de données) seront nécessaires.\\
+    \subsection*{Français}
+    Dans ce contexte, le stagiaire sera amené à prendre part à un projet européen \gls{Clean Sky}. Le travail portera sur l'évaluation de l'impact environnemental de nouvelles procédures de vol, dans le cadre du projet \gls{ATAEGINA}.\\
+    Le stage portera sur la modélisation bruit et émissions de ces nouvelles procédures à partir de données \gls{FDR} enregistrées en conditions réelles de vols. Les modélisations bruit seront réalisées à partir des modèles \gls{INM}, \gls{AEDT} et \gls{STAPES}, et les modélisations des émissions à partir du modèle \gls{Turbogas}.\\
+    Les résultats de ces modélisations devront être analysés statistiquement et une étude paramétrique sur les modèles devra être réalisée. Le développement de programmes pour l'automatisation de l'analyse et la visualisation des résultats (grand jeu de données) seront nécessaires.\\
     Il pourra être demandé au stagiaire de participer ponctuellement à d'autres projets du bureau d'étude.
-    \subsubsection*{English}
-    \lipsum[1]
+    \subsection*{English}
+    In this context, the intern will take part in a \gls{Clean Sky} european project. The task will consist in evaluating the environmental impact of new flight procedures for civil planes, as part of the \gls{ATAEGINA} project.\\
+    The internship will involve carrying out noise and emissions modelling of these new flight procedures based on \gls{FDR} data recorded in real flight conditions. The noise modelling will be carried out using the \gls{INM}, \gls{AEDT} and \gls{STAPES} models, while the emissions modelling will be carried out using the Turbogas model.\\
+    The output results of those modellings will have to be statistically analyzed and a parametrical study of the models will need to be conducted. It will also be necessary to develop programs to automate the analysis and visualization of the results (big sets of data).\\
+    The intern may be asked to temporarily take part in other projects.
     \newpage
     
     \section{Présentation d'Envisa}
-    Envisa est une société de conseil en environnement spécialisée dans l'aviation durable, qui a été fondée en 2004 par Mme Ayce Celikel. Envisa propose aux aéroports des services de conseils et de certification en Airport Carbon Accreditation (ACA). Envisa compte aujourd'hui au sein de son équipe un peu moins d'une dizaine de collaborateurs aux profils variées et complémentaires dans un contexte anglophone à forte orientation internationale.
-    \paragraph{Ayce :} Ayce a fondé Envisa il y a plus de 11 ans et a également cofondé AEROBAY. Elle a fondé Envisa et cofondé AEROBAY
-    \paragraph{Serkan :} Ami de longue date d'Ayce, Serkan a rejoint l'aventure Envisa en août 2014 après avoir occupé des postes importants dans une grande banque Turque. Il est aujourd'hui de directeur financier d'Envisa.
-    \paragraph{Emilia :}
-    Forte d'une longue expérience dans le domaine de l'aviation et plus particulièrement les aspects environnementaux liés à l'activité aéronautique, Emilia peut justifier d'une thèse portant sur les émissions de polluants. Très polyvalente elle sait mettre à profit ses capacités d'adaptation que ce soit sur de nouveaux logiciels ou des langages de programmation tels que Python. Les bases de données et les réseaux n'ont pas de secrets pour elle.
-    \paragraph{Stavros :}
-    Stavros a validé une thèse portant sur les particules fines. Il est spécialisé dans les émissions de polluants et gaz à effet de serre et joue à la fois le rôle de référent dans divers langages de programmation, notamment Python.
-    \paragraph{Anne-Laure :}
-    Anne-Laure termine actuellement sa thèse en perception acoustique. Elle est la référence de l'entreprise pour les questions relatives au bruit.
-    \paragraph{Amel :}
-    Après avoir suivi un parcours en sciences politiques, Amel s'est spécialisée en communication. Elle est en charge à ce jour de la partie communication et marketing d'Envisa.
+    Envisa est un bureau d’études Fondée en 2004 par Mme Ayce Celikel spécialisé dans la recherche environnementale et économique, appliquée au domaine de l’aviation civile. Spécialisée dans l'aviation durable, Envisa se donne pour principale mission  est d'allier performance environnementale et économique pour le secteur des transports, en particulier pour le secteur de l'aviation. Dans ce but, Envisa propose des prestations de formation et de conseil, et plus récemment a diversifié nos services en proposant des prestations d'audit, de vérifications, et des outils en-ligne. Envisa propose ainsi une large gamme de services, permettant d'offrir des solutions personnalisées à ses clients.\\
+    Envisa propose aux aéroports des services de conseils et de certification en Airport Carbon Accreditation (ACA). Envisa compte aujourd'hui au sein de son équipe un peu moins d'une dizaine de collaborateurs aux profils variées et complémentaires dans un contexte anglophone à forte orientation internationale.
+    \subsection*{Activités}
+    ENVISA propose les services suivants pour les planificateurs et les opérateurs aéroportuaires :
+    \begin{itemize}
+    	\item cartographies de bruit (en respect de la directive européenne 2002/49/EC),
+    	\item modélisation de la qualité de l'air,
+    	\item études d'impact environnemental de nouvelles procédures ATM,
+    	\item études de compromis (ex. bruit VS émission),
+    	\item analyse coûts-bénéfices,
+    	\item conception, développement et validation de modèle de bruit et de qualité de l'air (y compris des modèles de dispersion).
+    \end{itemize}
+    
+    ENVISA propose les services suivants pour les compagnies aériennes :
+    \begin{itemize}
+    	\item évaluation de la consommation de carburant et d'émission en fonction des trajectoires,
+    	\item études de compromis pour différentes techniques ATM  (ex. bruit VS émission),
+    	\item veilles réglementaires,
+    	\item étude de l'impact de nouvelles réglementations.
+    \end{itemize}
+    
+    ENVISA propose les services suivants pour les \gls{ANSP} :
+    \begin{itemize}
+    	\item évaluation de l'impact environnemental de la réorganisation de l'espace aérien ;
+    	\item création de base de données de trafic aérien (trajectoire porte à porte - "gate-to-gate") ;
+    	\item conception, développement et validation de modèle de bruit et d'émission ;
+    	\item analyse coûts-bénéfices.
+    \end{itemize}
+    
+    ENVISA propose les services suivants pour les fabricants, les motoristes et les équipementiers :
+    \begin{itemize}
+    	\item étude de l'impact environnemental et économique de réglementations ;
+    	\item évaluation de l'impact environnemental de nouvelles technologies (impact sur la phase LTO et/ou croisière).
+    \end{itemize}
+    
+    \subsubsection*{Audit / Vérification}
+    ENVISA et la société VerifAvia offrent ensemble des prestations d'audit et de vérification. Les consultants ENVISA sont aussi des auditeurs certifiés ISO 14064 pour la vérification des émissions de GES rapportées par l’aviation dans le cadre du Schéma Communautaire d’Echange de Quotas d’Emission (SCEQE -- EU Emission Trading Scheme). ENVISA est aussi un vérificateur certifié pour les aéroports dans le cadre du programme "Airport Carbon Accreditation". ENVISA est par ailleurs habilité par l’ADEME pour réaliser des Bilans Carbone® au sein des entreprises.
+    
+    Notre partenaire VerifAvia est une société d'audit et de vérification reconnue dans le monde entier. VerifAvia est spécialisé dans le secteur aéroportuaire, maritime et est l'un des leaders pour la vérification des émissions de CO2 des compagnies aérienne dans le contexte des échanges de quota d’émission.
+    
+    \subsubsection*{La plateforme web d'Envisa : AeroGenie®}
+    ENVISA est train de développer une application web (AeroGenie®) spécifique pour les aéroports permettant d'évaluer leur impact environnemental et sociétal. Les premiers modules carbone, eau, et déchet sont complétés courant 2014.
+    
+    AeroGenie® est la solution en ligne de pilotage de l'impact environnemental et sociétal des aéroports. AeroGenie® comprend plusieurs modules dont un module d'empreinte carbone, basé sur la méthode du GHG Protocol, dont découle la méthode ACA (Airport Carbon Accreditation) proposée par ACI (Airport Council International). En plus du module empreinte carbone, AeroGenie® possède aussi les modules suivants: qualité de l'air, bruit, déchets, RSE (responsabilité sociale des entreprises), eau et énergie. AeroGenie® permettra ainsi à un aéroport de réduire son impact environnemental, de suivre ses performances au fil du temps et d'optimiser l'efficacité de son plan d'actions.
+    
+    L'atout majeur de l'outil AeroGenie® est sa base données, qui a été compilée à partir de bases de données existantes reconnues mondialement et des bases de données développées par ENVISA, le fruit de plus de 10 ans de travail.
+    
+    Quelques avantages clés de l'outil incluent :
+    \begin{itemize}
+    	\item Une saisie de données minimales par l'utilisateur, les mêmes données d'entrées sont utilisées pour plusieurs modules (bruit, eau, déchet, CO2, qualité de l'air),
+    	\item La comparaison de l'impact environnemental de différents scénarios (par exemple, il est possible de comparer l'impact sur les émissions de CO2 suite au recours de différentes énergies renouvelables, ou le renouvellement de la flotte au sol),
+    	\item La génération du formulaire de demande du label "Airport Carbon Accreditation" ("application form"), qui pourra ensuite être déposé sur le site de ACI pour être vérifié par un tiers-parti.
+    \end{itemize}
+    AeroGenie ® ne nécessite aucun logiciel ou système d'exploitation spécifique pour fonctionner.  Le système repose sur un environnement multi-utilisateur ou le flux de données est sécurisé et cryptés sur le Cloud alloué au serveurs. Des versions entièrement personnalisées de AeroGenie® peuvent également être conçues et déployées sur l'intranet d'un aéroport.
+    
+    Nouvelles technologies vertes:
+    
+    ENVISA a évalué l'impact environnemental du nouvel équipement de roulage (EGTS – Electric Green Taxiing System) conçu par Safran et Honeywell. Grâce à cet équipement, durant le roulage, les moteurs de l'avion sont coupés, réduisant considérablement la consommation d'énergie durant la phase de roulage.
+   
+    \subsubsection*{Open-ALAQS}
+    Au cours des dix dernières années, ENVISA a développé, validé et assuré la maintenance de l'outil ALAQS pour EUROCONTROL. ALAQS (Airport Local Air Quality Studies) est un outil de modélisation de la qualité de l'air pour les aéroports. L'outil prend en compte toutes les sources d'émissions (les sources fixes, les sources mobiles routières, les émissions liées au roulage des avions, l'atterrissage et le décollage des vols, le recours aux APU ou aux groupes de puissance électrogèn). Plus récemment ENVISA a été mandaté par EUROCONTROL afin de réaliser une version Open Source de l'outil ALAQS utilisant QuantumGIS en lieu et place d’ArcView.
+    
+    \subsubsection*{Emissions aéroportuaires}
+    ENVISA a mené plusieurs études sur les émissions aéroportuaires entre autres dans le cadre du projet ALAQS. ENVISA a notamment effectué des inventaires d'émissions pour les aéroports européens, dont  l'aéroport de Bucarest (Henri Coanda), Varsovie (Chopin), Londres Heathrow, London City, Bahrein, etc...
+    Par ailleurs, ENVISA a contribué au développement du manuel de l'OACI relatif à la qualité de l'air des aéroports.
+    Support technique pour l' AESA (Agence européenne de la sécurité aérienne):
+    
+    ENVISA fournit un support technique à l'AESA pour le développement de l'indicateur CO2. Dans ce contexte, ENVISA à évaluer plusieurs indicateurs suivant une multitude de critères défini par l'OACI/CAEP. Les résultats de l'étude ont été présentés aux groupes de travaux de l'OACI (CAEP WG3 CO2TG), et ont contribué à finaliser l'indicateur retenu.
+    AESA /EUROCONTROL STAPLES (System for Airport Noise Exposure Studies):
+    
+    ENVISA était en charge de la collecte et de la mise en forme des données d'entrée de trafic aérien pour les 28 aéroports du modèle de bruit STAPES de EUROCONTROL (cela a impliqué l'analyse de données CAEP/8).
+    NATS – Qualité de l'air:
+    
+    ENVISA a aidé NATS (ANSP), à évaluer l'impact sur la qualité de l'air de la création de la troisième piste d'atterrissage à l'aéroport de Heathrow. L'impact opérationnel de ce changement sur les aéroports de Heathrow et de London City ont été evalués et traduits en terme d'impact sur la qualité de l'air.
+    World Interconnected Sources Database of Operational Movements – WISDOM:
+    
+    ENVISA a été mandaté par EUROCONTROL, pour améliorer la qualité de sa base de données de trafic aérien globale, notamment en créant des interfaces avec les systèmes d'information géographique (SIG).
+    \subsubsection*{Prévision du trafic aérien}
+    Ce projet réalisé pour EUROCONTROL consistait à développer une nouvelle méthodologie statistique pour la prévision du trafic aérien à court, moyen et long terme. Le scénario de référence était défini à partir de données historiques et les prévisions étaient basées sur des intentions de vol confirmées. L'objectif de ce projet était de transformer la méthode actuelle basée sur des jugements d'expert en une méthode statistique pour effectuer des prévisions. Cette étude fait partie du projet P7.6.5 DCB dans le cadre du Work Package SESAR 07.
+    \subsubsection*{Développement d'indicateurs}
+    Dans le cadre de la création d'un nouvel indicateur de \gls{CO2} par l'\gls{OACI}, ENVISA a développé plus d'une centaine d'indicateurs pour les émissions de CO2 des aéronefs basés sur des paramètres techniques tels que la masse maximale au décollage (\gls{MTOW}), la superficie, le nombre de sièges, la charge utile… (l'indicateur a été validé en Juillet 2012 par le Comité CAEP).\\
+    ENVISA a aussi élaboré un ensemble d'indicateurs de développement durable relatifs au transport aérien pour EUROCONTROL. Les trois critères du développement durable ont été pris en compte: la durabilité sociale, l'économie et l'environnement. Des indicateurs ont été développés pour chaque acteur du secteur de l'aviation (les fabricants, les compagnies aériennes, les aéroports, les services de navigation aérienne).
+    \subsection*{L'équipe Envisa}
+    \textbf{Ayce} a fondé Envisa il y a plus de 11 ans et en est à ce jour la Présidente Directrice Générale. Elle est également la co-fondatrice de la société AEROBAY qui exploite une plateforme \gls{B2B} dédiée au démantèlement d'avions et aux métiers du recyclage.
+    \\\\
+    Ami de longue date d'Ayce, \textbf{Serkan} a rejoint l'aventure Envisa en août 2014 après avoir occupé divers postes dans plusieurs grandes banques turques. Il est aujourd'hui le directeur financier d'Envisa.
+    \\\\
+    Forte d'une longue expérience dans le domaine de la modélisation environnementale, \textbf{Emilia} peut justifier d'une thèse portant sur les émissions de polluants. Très polyvalente elle sait mettre à profit ses capacités d'adaptation que ce soit sur de nouveaux logiciels ou des langages de programmation tels que Python. Les bases de données et les réseaux n'ont pas de secrets pour elle.
+    \\\\
+    \textbf{Stavros} a validé une thèse en météorologie. Il est spécialisé dans les problématiques liées à la qualité de l'air et a activement participé au développement du projet \gls{Open-ALAQS}. Il joue en même temps le rôle de référent dans divers langages de programmation, notamment Python.
+    \\\\
+	\textbf{Anne-Laure} termine actuellement sa thèse en perception auditive. Elle est la référente de l'entreprise pour les questions relatives au bruit.
+    \\\\
+    Après avoir suivi un parcours en sciences politiques, \textbf{Amel} s'est spécialisée en communication. Elle est en charge à ce jour de la partie communication et marketing d'Envisa.
+    \paragraph{Divya}
+    Divya possède à son actif 5 années d'expérience dans le secteur de l'environnement avec un accent particulier sur l'industrie de l'aviation. Elle fut . Sa collaboration avec Envisa s'est terminée en juin 2016.
     \newpage
     
     \part{Travail Réalisé}
 
     \section{Le projet ATAEGINA : réduire l'impact sonore de l'aéronautique}
     \subsection{Présentation du projet ATAEGINA}
-    Le projet \gls{ATAEGINA} 
+    \subsubsection{Participants}
+    % \begin{tabular}
+    % 
+    % \end{tabular}
+    \subsection{\gls{INM}}
+    Le Modèle de Bruit Intégré ou \gls{INM} était le modèle  informatique standard de la \gls{FAA} de 1978 à mai 2015 pour évaluer l'impact du bruit d'origine aéronautique aux abords des aéroports, notamment sur les zones habitables. \gls{INM} est un programme informatique utilisé par plus d'un millier d'organisations dans plus de 65 pays.\\
+    Le programme peut être utilisé directement pour :
+    \begin{itemize}
+    	\item estimer l'impact des bruits d'avion autout d'un aéroport ou d'un héliport donné ;
+    	\item estimer les variations de l'impact sonore résultant de nouvelles configurations de pistes ;
+    	\item estimer les changements dans l'impact sonore résultant de nouvelles demandes de trafic aérien et compositions de flottes ;Assessing changes in noise impact resulting from new traffic demand and fleet mix
+    	\item évaluer l'impact sonore de nouvelles procédures de vol ;Evaluating noise impacts from new operational procedures
+    	\item évaluer l'impact sonore résultant d'opération d'avions sur les aux abords des parcs nationaux.Evaluating noise impacts from aircraft operations in and around national parks
+    \end{itemize}
+    Le modèle \gls{INM} était capable de générer aussi bien des contours de bruit dans un secteur donné que des niveaux sonores à des emplacements prédéterminés. Les données de sorties pouvaient être à base de niveaux d'exposition, de niveaux maximum ou de durées d'exposition.\\
+    A compter de mai 2015, \gls{INM} a été remplacé par l'Outil de Conception Environnementale pour l'Aviation ou \gls{AEDT} pour lequel les méthodologies employées dans INM ont joué le rôle de composants clés.
+    \subsection{Turbogas}
+    \gls{Turbogas} est un modèle multi-plateforme, écrit en langage Python et développé en interne par Envisa, qui permet de calculer les émissions d'un ensemble de vols. \gls{Turbogas} propose de choisir parmi plusieurs méthodes pour le calcul des émissions.
+    Il est capable de réaliser des estimations précises des quantités de \gls{NOx}, \gls{CO2} et d'eau ainsi que de la durée de vie des traînées de condensation générées par un avion le long d'une trajectoire très fine. \gls{Turbogas} a été rigoureusement validé à l'aide de données issues de mesures effectuées en vol et aux aéroports.\\
+    La méthode implémentée par défaut est la \gls{BFFM2}, qui peut être appliqué à la plupart des turboréacteurs en utilisant des données d'accès public.\\
+    La méthode avancées \gls{P3T3}, basée sur la température du compresseur, la pression, le ratio combustible / air et l'index d'émissions de \gls{NOx} pour quatre différents réglages de moteur est aussi déployé dans l'outil.
     
     \subsection{Objectif}
     Le travail qui m'a été confié dans le cadre du projet ATAEGINA a consisté en deux principales tâches :
@@ -95,21 +230,9 @@
         \item le développement de programmes permettant l'analyse et la visualisation des données collectées.
     \end{itemize}
     
-    \subsection{Outils Existants}
+    \subsection{Programmes Python Existants}
     La totalité des programmes mentionnés dans ce rapport sont écrits dans le langage de programmation Python. Les fichiers rencontrés dans ce qui suit qui se terminent par l'extension ".py" correspondent ainsi à des scripts Python.
-    \paragraph{INM :}
-    Le Modèle de Bruit Intégré ou \gls{INM} était le modèle  informatique standard de la FAA depuis 1978 pour évaluer l'impact du bruit d'origine aéronautique aux abords des aéroports, notamment sur les zones habitables. \gls{INM} est un programme informatique utilisé par plus d'un millier d'organisations dans plus de 65 pays.\\
-    Le programme peut être utilisé directement pour :
-    \begin{itemize}
-        \item estimer l'impact des bruits d'avion autout d'un aéroport ou d'un héliport donné ;
-        \item estimer les variations d'impact sonore résultant de nouvelles configurations de pistes ;
-        \item Assessing changes in noise impact resulting from new traffic demand and fleet mix
-        \item Evaluating noise impacts from new operational procedures
-        \item Evaluating noise impacts from aircraft operations in and around national parks
-    \end{itemize}
-    Le modèle \gls{INM} était capable de générer aussi bien des contours de bruit dans un secteur donné que des niveaux sonores à des emplacements prédéterminés. Les données de sorties pouvaient être autant à base de niveaux d'exposition, que de niveaux maximum, ou de durées.\\
-    A compter de mai 2015, \gls{INM} a été remplacé par l'Outil de Conception Environnementale pour l'Aviation ou \gls{AEDT} pour lequel les méthodologies employées dans INM ont joué le rôle de composants clés.
-    \paragraph{ReadFDRData.py :}
+    \subsubsection*{ReadFDRData.py}
     Le fichier ReadFDRData.py lit une liste de fichiers (généralement au format Excel) contenant des données de vol enregistrées en conditions réelles. Ces données sont alors formatées selon des règles précises et exportées dans un nouveau format plus facile à manipuler (pickle). Ces données de vol incluent de façon non exhaustive :
     \begin{itemize}
         \renewcommand{\labelitemi}{$\bullet$}
@@ -120,7 +243,7 @@
         \item 
         \item 
     \end{itemize}
-\paragraph{CreateINMInput.py :}
+	\subsubsection*{CreateINMInput.py}
     Le fichier \code{CreateINMInput.py} a pour fonction de lire les données de vol formatées par le fichier \code{ReadFDRData.py} puis de construire des fichiers d'entrée au format .dbf (fichier de base de données DBase) pour INM à partir de ces données.\\
     Les fichiers créés par \code{CreateINMInput.py} sont :
     \begin{itemize}
@@ -129,28 +252,43 @@
     \end{itemize}
     
     \subsection{Outils Développés}
-    \paragraph{CreateINMStudy.py :}
-    \paragraph{inmauto.py :}
+    \subsubsection*{CreateINMStudy.py}
+    \subsubsection*{inmauto.py}
     Le fichier \code{inmauto.py} constitue un élément central du travail accompli. Ce dernier contient un ensemble de fonctions (on peut aussi parler d'outils) permettant d'automatiser l'interaction avec l'interface graphique du programme INM. Ainsi, plutôt que de configurer une étude complète en passant par les menus du logiciels INM, et de devoir répéter le processus à chaque nouvelle étude, l'utilisateur a la possibilité de rédiger un simple programme Python pour réaliser un grand nombre d'études et ce, sans avoir à passer par la moindre interaction avec l'interface graphique du logiciel INM.\\
     Une telle démarche présente deux intérêts majeurs :
     \begin{itemize}
         \item un gain de temps important de part la vitesse d'exécution et l'autonomie du programme qui libère l'opérateur pour d'autres tâches ;
         \item la minimisation du risque d'erreurs dues à des facteurs humains (principalement des erreurs de frappe ou des omissions).
     \end{itemize}
-    \paragraph{INMSample.py}
+    \subsubsection*{INMSample.py}
     Le fichier \code{INMSample.py} avait à la base une vocation explicative quant à la façon de mettre en \oe uvre les outils fournis par \code{inmauto.py}. Il s'est ensuite peu à peu étoffé jusqu'à contenir le code permettant d'automatiser une étude complète sur INM faisant intervenir plusieurs dizaines de vols.
-    \paragraph{ReadINMOutput.py}
+    \subsubsection*{ReadINMOutput.py}
     Le fichier \code{ReadINMOutput.py} a pour fonction de lire et collecter les données de sortie d'un ensemble d'études INM, puis de mettre en forme ces données de manière à les rendre exploitables et exportables.
-    
     \subsection{Résultats de l'Analyse Bruit}
     \subsection{Resultats de l'Analyse Emissions}
+    \subsection{\'Etude de laboratoire : Perception auditive}
+    Outre la modélisation de contours de bruit, les enregistrements de bruits d'avions collectés serviront également de 
+    \'A l'avenir, les résultats de cette étude pourraient servir à développer un modèle de perception auditive basé sur des facteurs acoustiques.
+    \subsection{Bilan}
     \newpage
     
     \section{Le projet Open-ALAQS : réduire les émissions de polluants et gaz à effet de serre}
-    \subsection{Présentation du projet Open-ALAQS}
-    FR Le projet ALAQS (Airport Local Air Quality Studies) est une application qui simplifie le processus de définition de divers éléments aéroportuaires (comme les pistes, les voies de circulation, les bâtiments, etc.) et permet la visualisation de la distribution spatiale des émissions.
+    \subsection{Introduction à Open-ALAQS : Les SIG et QGIS}
+    \subsubsection*{SIG}
+    Les \gls{SIG} sont particulièrement adaptés pour la représentation d'aéroports et de leurs abords. On appelle \gls{Caracteristique} tout élément placé sur la carte dans le canevas du \gls{SIG}, par exemple une piste d'atterrissage, un bâtiment, une source ponctuelle d'émissions, et ainsi de suite. Dans un \gls{SIG} les caractéristiques sont groupées par couches de caractéristiques géographiques similaires, par exemple une couche pour les pistes d'atterrissage, une autre pour les voies de navigation, une autre pour les bâtiments, etc.. Les couches contiennent non seulement les informations de localisation et de forme pour chaque caractéristiques, mais aussi leurs informations d'attribut.
+    \subsubsection*{QGIS}
     
-    EN Le projet ALAQS (Airport Local Air Quality Studies) is an application that simplifies the process of defining the various airport elements (runways, taxiways, buildings, etc.) and allows the spatial distribution of emissions to be visualised.
+    This is a cross-platform, free and libre desktop geographic information system (GIS) application that provides data viewing, editing and analysis capabilities.
+    
+    SQLite	This is an libre relational database management system.
+    Open-ALAQS retains the philosophy of the original application: bringing together state-of-the-art methods and databases to provide users with a test-bed for research (e.g. comparing various dispersion models based on the same emission inventory) and for the evaluation of operational improvements at airports. A significant amount of effort has been put into the design of a modular approach for Open-ALAQS, which has resulted in a clear separation of critical elements (user interface - methods - data format) as well as dedicated modules for each type of emission source. This will facilitate further improvements and maintenance of the toolset.
+    
+    This new version is also being used to carry out a new CAEP local air quality model evaluation exercise.
+    \subsection{Présentation du projet ALAQS}
+    \subsubsection{ALAQS}
+    Le projet \gls{ALAQS} est une application qui simplifie le processus de définition de divers éléments aéroportuaires (comme les pistes, les voies de circulation, les bâtiments, etc.) et permet la visualisation de la distribution spatiale des émissions.
+    
+    \gls{ALAQS} offre un inventaire quadri-dimensionnel des émissions d'un aéroport 
     
     ALAQS provides a four-dimensional emission inventory for an airport in which the emissions from the various fixed and mobile sources are aggregated and subsequently displayed for analysis. Once the emission inventory has been established, dispersion modelling (not yet included in ALAQS) can be used to calculate pollutant concentrations at the airport and in the surrounding area over a given period. The system is thus compatible with legislative requirements for 8-hour, 24-hour, and annual mean values of pollutant concentrations.
     
@@ -160,23 +298,13 @@
     
     However, ALAQS-AV is no longer supported by EUROCONTROL due to new technological orientations.
     
+    \subsubsection{Open-ALAQS}
+    Une nouvelle version de \gls{ALAQS} intitulée \gls{Open-ALAQS} est en cours de développement depuis 2014 et devrait être prête dans le courant de l'année 2016.\\
+    Cette nouvelle version est basée sur le \gls{SIG} libre \gls{QGIS} et le \gls{SGBD} libre \gls{SQLite}, et a été conçue autour d'une architecture ouverte lui permettant d'être facilement adaptable à d'autres \gls{SIG} et \gls{SGBD}.
     
-    Open-ALAQS
-    
-    A new version of the ALAQS application called Open-ALAQS is under development.
-    
-    This new version is based on an open-source GIS (QGIS) and an open-source database (SQLite), and is completely built around an open architecture which will make it easily adaptable to other GISes and databases.
+    This new version is based on an libre GIS (QGIS) and an libre database (SQLite), and is completely built around an open architecture which will make it easily adaptable to other GISes and databases.
     
     Open source
-    QGIS
-    
-    Previously known as "Quantum GIS".
-    
-    This is a cross-platform, free and open-source desktop geographic information system (GIS) application that provides data viewing, editing and analysis capabilities.
-    SQLite	This is an open-source relational database management system.
-    Open-ALAQS retains the philosophy of the original application: bringing together state-of-the-art methods and databases to provide users with a test-bed for research (e.g. comparing various dispersion models based on the same emission inventory) and for the evaluation of operational improvements at airports. A significant amount of effort has been put into the design of a modular approach for Open-ALAQS, which has resulted in a clear separation of critical elements (user interface - methods - data format) as well as dedicated modules for each type of emission source. This will facilitate further improvements and maintenance of the toolset.
-    
-    This new version is also being used to carry out a new CAEP local air quality model evaluation exercise.
     
     The Open-ALAQS license agreement will be available in the near future.
     
@@ -221,25 +349,88 @@
     Aircraft emission factors	Open-ALAQS makes use of the ICAO Engine Emissions Databank (issue 20, March 2014) for aircraft jet engine emission factors and the FOCA piston engine emission factors (issued 1/5/09). Open-ALAQS allows authorised users to use turboprop emission factors from the confidential FOI data base. A specific module has been developed with Open-ALAQS to automate the update of emission factors when a new version of the ICAO, FOCA or FOI database is issued.
     Road traffic emission factors	
     The Open-ALAQS method for roadway emissions has been adapted from the COPERT IV method and emission factors. Fleet statistics for European countries have been obtained from the COST 319 project. These are used in combination with the average speed on every road segment to calculate segment-specific emission factors for CO, NOX, VOC and PM10.
-    \subsection{Objectif}
-    Le travail effectué 
+    \subsection{ALAQS Database Editor}
+    \subsection{Logiciel GSE}
+    \newpage
     
-    \section{Travaux annexes}
-    \subsection{Design et communication web}
-    \subsection{Réalisation de vidéos explicatives pour un projet "e-learning"}
-    Dans le cadre du projet Open-ALAQS, j'ai été amené à réaliser, en parallèle de mon travail de développement de l'outil de calcul d'émissions de GSE
+    \section{Design et communication web}
+    En marge de mon travail de développement et d'analyse pour les projets \gls{ATAEGINA} et \gls{Open-ALAQS}, j'ai passé une partie significative de mon stage à travailler en étroite collaboration avec Amel, la responsable communication et marketing chez Envisa. Mon travail a consisté à épauler Amel pour deux tâches principales : l'uniformisation et la formalisation de l'aspect communication visuelle d'Envisa à travers la création d'une charte graphique, et la refonte du site internet de l'entreprise.
+    \subsection{Établissement d'une charte graphique}
+    \subsubsection{Motivation derrière la création d'une charte graphique}
+    La motivation derrière l'existence d'une charte graphique est double. Il s'agit d'une part de \textbf{formaliser} les choix qui ont été faits en matière de design dans la mise au point des divers éléments visuels inhérents à la communication d'une entreprise. Ces éléments sont regroupés au sein d'un même document et décrits en détails et les motivations derrière le choix de tel ou tel élément peuvent être éclairées. D'autre part, en exposant des règles strictes et détaillées de l'utilisation de l'ensemble des éléments visuels propres à une marque, une charte graphique permet d'\textbf{uniformiser} la communication visuelle d'une entreprise car les mêmes couleurs, polices de caractères et règles de mise en page sont appliquées à l'identique dans une grande variété de situations.
+    \subsubsection{Cahier des charges pour une charte graphique d'Envisa}
+    En l'absence d'un tel document centralisant tous les aspects visuels de la communication d'Envisa, Amel et moi avons entrepris d'en mettre un au point.  Nous avons commencé par détailler les éléments que la charte graphique allait devoir contenir :
+    \begin{itemize}
+    	\item l'ensemble des \textbf{couleurs} intervenant dans les divers supports visuels de la marque, que ce soient des documents de communication officielle (brochures, etc.), des documents internes à l'entreprise (présentations internes) ou tout ce qui touche à la présence d'Envisa sur internet (site web, réseaux sociaux, publications, etc.) ;
+    	\item une description du \textbf{logo} d'Envisa accompagnée éventuellement de variations de ce logo, les contextes dans lesquels utiliser les plusieurs variations du logo le cas échéant, et des règles de mise en page à respecter (marges autour du logo par ex.) ;
+    	\item des \textbf{polices de caractères} pour chaque élément stylistique (niveaux de titres, corps de texte, liens pour le site web, etc.) qui soient au nombre de 3 maximum -- idéalement deux polices complémentaires -- afin de conserver une cohésion visuelle ;
+    	\item des \textbf{exemples de mise en page type}  de documents pour illustrer les contextes d'utilisation des éléments stylistiques précédemment décrits, tels que des fichiers texte, des présentations, des brochures ou des pages web.
+    \end{itemize}
+    \subsubsection{Réalisation de la charte graphique}
+    Pour réaliser la charte graphique, nous nous somme inspirés de plusieurs exemples de charte graphique trouvés en ligne.
+    
+    \subsection{Site internet}
+    \subsubsection{Objectifs}
+    Pour le site internet d'Envisa, nous nous étions fixé deux objectifs. Le premier consistait à lui faire subir une refonte visuelle, notamment en nous servant de la nouvelle charte graphique. Le second consistait à mettre à jour le contenu du site.
+    \subsubsection{WordPress}
+    Le site web d'Envisa reposant sur la plateforme de création et administration de sites en ligne \gls{WordPress}, la refonte du site internet de l'entreprise passait par l'apprentissage de l'outil \gls{WordPress}.\\
+    \gls{WordPress} 
+	\subsection{Bilan}
+	A l'issue de ce travail sur des aspects pour lesquels je n'étais a priori pas spécialiste (design, conception de site web) je tire un bilan positif aussi bien des résultats obtenus que des enseignements tirés des missions qui m'ont été confiées.\\
+	Tout d'abord, la charte graphique fut un succès. L'objectif visé de regrouper les éléments visuels de la communication d'Envisa au sein d'un même documents a été atteint et le document créé sera à l'avenir activement utilisé et certainement augmenté.\\
+	En ce qui concerne le site web, le bilan est plus mitigé. Le site a effectivement subi une refonte graphique mais son contenu est resté sensiblement le même bien que la création de nouvelles pages et la mise à jour des pages existantes fût un des objectifs visés. \\
+	Néanmois, cette partie de mon stage m'a permis d'acquérir de nouvelles notions. Je me suis familiarisé avec \gls{WordPress} qui est de loin l'outil de création de sites web le plus répandu aujourd'hui. J'ai me suis auto-formé au logiciel de dessin vectoriel \gls{Inkscape}. J'ai été amené à d'appréhender des logiciels de gestion de serveurs (\gls{WAMP}) pour administrer une copie du site internet d'Envisa de façon locale -- c'est-à-dire une copie du site internet enregistrée dans le disque dur de mon ordinateur. Et pour finir, j'ai développé une certaine sensibilité au design en manipulant les diverses variations du logo de l'entreprise et en ayant la responsabilité de choisir les polices de caractères pour la charte graphique.
+    \section{Réalisation de vidéos explicatives pour un projet "e-learning"}
+    En complément de mon travail de développement informatique dans le cadre du projet \gls{Open-ALAQS}, j'ai été amené à participer à un projet "e-learning" pour le compte d'\gls{EUROCONTROL}. Ce projet consistera à terme en une série de vidéos explicatives sur le site internet d'\gls{EUROCONTROL} qui auront pour objectif d'introduire l'utilisateur débutant aux diverses fonctionnalités d'\gls{Open-ALAQS}.\\
+    Les cours e-learning seront répartis en modules, chacun présentant un aspect précis d'\gls{Open-ALAQS}. La structure suggérée pour ces modules est la suivante :
+    \begin{itemize}
+    	\item Module 1 : Introduction
+    	\begin{itemize}
+    		\item Unité 1 : Introduction à la formation e-learning
+    		\item Unité 2 : Introduction aux problématiques de qualité de l'air
+    		\item Unité 3 : Exemples issus d'aéroports existants
+    		\item Quiz
+    	\end{itemize}
+    	\item Module 2 : Tutoriel
+    	\begin{itemize}
+    		\item Unité 1 : Installation d'\gls{Open-ALAQS}
+    		\item Unité 2 : Réaliser une étude de qualité de l'air à l'aide d'\gls{Open-ALAQS}
+    		\item Unité 3 : Calculer les émissions
+    		\item Quiz
+    	\end{itemize}
+    	\item Module 3 : Modélisation de la dispersion
+    	\begin{itemize}
+    		\item Unité 1 : \gls{AUSTAL2000}
+    		\item Unité 2 : Données d'entrée
+    		\item Unité 3 : Données de sortie
+    		\item Quiz
+    	\end{itemize}
+    	\item Module 4 : Post-traitement des résultats
+    	\begin{itemize}
+    		\item Unité 1 : \gls{Open-ALAQS}
+    		\item Unité 2 : \gls{AUSTAL2000}
+    		\item Quiz
+    	\end{itemize}
+    	\item Module 5 : Techniques et astuces
+    	\item Module 6 : Récapitulatif
+    \end{itemize}
+    de l'outil de calcul \gls{GSE} des vidéos à but pédagogique.
     \newpage
     
     \part{Conclusion}
-    \subsubsection*{Français}
-    A l'issue de ce stage j'ai appris beaucoup.
+    \subsection*{Français}
+    % le bilan des enseignements que je tire du stage
+    A l'issue de ce stage je tire un bilan positif de mon expérience chez Envisa. Le travail qui m'a été confié s'est révélé varié et d'un niveau relevé. Chacune des tâches qui m'ont été confiées m'a permis de progresser dans un domaine particulier. Les projets ATAEGINA et Open-ALAQS ont mis à l'épreuve mes compétences en programmation informatique et ma capacité d'analyse tout en me faisant découvrir divers aspects de la modélisation environnementale liés à l'aviation. Mon travail en design et communication web m'a permis de découvrir certaines facettes de l'administration d'un site internet ainsi que de développer une sensibilité
+    
+    % le bilan de mes apports à l'entreprise 
     \begin{itemize}
         \item sur le plan humain. Savoir dialoguer avec des individus issus de cultures différentes et aux caractères variés.
         \item sur le domaine de l'aéronautique
         \item sur les problématiques environnementales liées à l'aviation
         \item sur 
     \end{itemize}
-    \subsubsection*{Anglais}
+    \newpage
+    \subsection*{Anglais}
     \newpage
     
     \appendix
@@ -249,16 +440,18 @@
     \newpage
     
     \section{Code source}
-    \subsection{ReadFDRData.py}
-    \subsection{CreateINMInput.py}
-    \subsection{CreateINMStudy.py}
-    % \lstinputlisting[language=Python]{CreateINMStudy.py}
-    \subsection{inmauto.py}
-    % \lstinputlisting[language=Python]{inmauto.py}
-    \subsection{INMSample.py}
-    \subsection{ReadINMOutput.py}
+    \subsection*{ReadFDRData.py}
+    \subsection*{CreateINMInput.py}
+    \subsection*{CreateINMStudy.py}
+    \subsection*{inmauto.py}
+    \subsection*{INMSample.py}
+    \subsection*{ReadINMOutput.py}
     \newpage
     
     \bibliographystyle{amsplain}
     \bibliography{biblio}
+    \newpage
+    
+    \setglossarystyle{altlisthypergroup}
+    \printglossaries
 \end{document}
